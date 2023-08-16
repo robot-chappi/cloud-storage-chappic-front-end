@@ -1,0 +1,44 @@
+.info {
+  @apply w-4/5 rounded-lg overflow-x-hidden overflow-y-scroll;
+  .file {
+    @apply bg-gray-800 text-gray-500 text-tiny flex items-center justify-center;
+    min-height: 200px;
+  }
+
+  .fileIcon {
+    @apply text-center bg-white text-tiny text-white;
+
+    > div {
+      @apply flex justify-center py-2;
+    }
+
+    > div:first-child {
+      @apply text-9xl;
+    }
+  }
+
+  .details {
+    @apply bg-dark-ocean p-3;
+    > div {
+      @apply mb-3 last:mb-0;
+      > span {
+        @apply block text-tiny;
+        &:first-child {
+          @apply text-gray-500 mb-1;
+        }
+
+        &:last-child {
+          @apply text-white;
+
+          &.content {
+            @apply whitespace-pre-wrap;
+          }
+
+          > a {
+            @apply text-primary opacity-75;
+          }
+        }
+      }
+    }
+  }
+}

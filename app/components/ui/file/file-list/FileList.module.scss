@@ -1,0 +1,18 @@
+@import '@/app/styles/mixins';
+
+.wrapper {
+  @apply flex flex-row flex-wrap gap-2;
+  padding: 30px 5px;
+
+  > div {
+    width: 15%;
+
+    @include media('max', 'xl') {
+      width: 24%;
+    }
+
+    @include media('max', 'md') {
+      width: 48%;
+    }
+  }
+}

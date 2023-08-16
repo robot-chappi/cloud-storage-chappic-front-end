@@ -1,0 +1,26 @@
+.input {
+  @apply relative block mb-7;
+
+  > input {
+    @apply rounded-lg py-2 bg-dark-ocean px-4 w-full block outline-0 text-white;
+    transition: box-shadow 0.4s ease;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+
+    &::placeholder {
+      color: #5c5a69;
+    }
+
+    &:focus {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  > .label {
+    @apply text-xs uppercase text-gray-600 mb-3 block;
+  }
+}
+
+.error {
+  @apply absolute -bottom-5 left-0 w-full text-purple;
+  font-size: 0.8rem;
+}

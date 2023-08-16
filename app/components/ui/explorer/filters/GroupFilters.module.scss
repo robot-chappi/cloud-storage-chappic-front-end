@@ -1,0 +1,7 @@
+.wrapper {
+  @apply flex items-center flex-wrap gap-5 p-2;
+
+  .checkbox {
+    @apply mb-2;
+  }
+}

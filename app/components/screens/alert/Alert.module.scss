@@ -1,0 +1,19 @@
+.wrapper {
+  @apply w-full px-5 pt-5 animate-errorScaleIn block;
+
+  > .section {
+    @apply w-full h-full bg-dark-ocean p-5 text-center flex flex-col gap-2 justify-center m-auto rounded-lg;
+
+    > .heading {
+      @apply text-lg font-bold text-white;
+    }
+
+    > .description {
+      @apply text-tiny text-white;
+    }
+
+    > .link {
+      @apply text-tiny font-bold text-white;
+    }
+  }
+}

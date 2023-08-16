@@ -1,0 +1,11 @@
+.main {
+  @apply block;
+
+  .content {
+    width: 100%;
+
+    .wrapper {
+      @apply mt-24;
+    }
+  }
+}

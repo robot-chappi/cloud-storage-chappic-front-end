@@ -1,0 +1,11 @@
+.wrapper {
+  @apply mb-6 text-white;
+
+  > .title {
+    @apply mb-3 font-semibold;
+  }
+}
+
+.reset {
+  @apply flex justify-center mb-2;
+}

@@ -1,0 +1,81 @@
+.wrapper {
+  @apply bg-dark-ocean h-56 rounded-lg p-2 m-2 text-white;
+
+  &.wrapper_small {
+    @apply h-40
+  }
+
+  > .btn {
+    @apply relative;
+
+    > .wrapper_btn {
+      @apply flex justify-between items-center;
+
+      > .toggle {
+        @apply text-tiny text-white relative z-20 bg-ocean rounded-sm p-1.5 transition-all;
+
+        &.active {
+          @apply text-black bg-white
+        }
+      }
+
+      > .actions {
+        @apply flex items-center gap-2;
+
+        > a {
+          @apply text-tiny text-white bg-ocean rounded-sm p-1.5 transition-all;
+
+          &:hover {
+            @apply bg-ocean/20 scale-110;
+          }
+        }
+      }
+    }
+
+    > .menuBtn {
+      @apply absolute pt-6 pl-2 hidden h-52 w-full top-0 left-0 z-10 bg-ocean rounded-lg animate-fade duration-500;
+
+      &.open {
+        @apply flex flex-col justify-center items-center;
+      }
+
+      .item {
+        @apply w-full flex items-center justify-center;
+
+        > .item_btn {
+          @apply text-tiny text-white relative z-20 bg-ocean rounded-sm p-1.5 transition-all;
+        }
+      }
+
+      .menu_item {
+        @apply flex my-1.5 items-center truncate w-full gap-1 justify-start;
+      }
+    }
+  }
+
+  > .info {
+    @apply mt-5;
+
+    > .image {
+      @apply flex justify-center items-center mb-2;
+    }
+
+    > .file {
+      @apply flex justify-center items-center mb-2;
+
+      > .fileIcon {
+        @apply text-7xl;
+        width: 100px;
+        height: 100px;
+
+        > svg {
+          @apply mx-auto;
+        }
+      }
+    }
+
+    > .originalName {
+      @apply truncate text-center;
+    }
+  }
+}

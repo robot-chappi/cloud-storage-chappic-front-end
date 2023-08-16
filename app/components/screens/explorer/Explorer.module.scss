@@ -1,0 +1,11 @@
+.wrapper_heading {
+  @apply flex items-center justify-between mb-7;
+}
+
+.explorer {
+  @apply hidden bg-dark-ocean rounded-lg m-4 p-3;
+
+  &.filterOpened {
+    @apply block gap-5;
+  }
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  @apply mt-10;
+
+  > .buttons {
+    @apply flex justify-center items-center flex-wrap gap-5;
+  }
+
+  > .info {
+    @apply flex gap-4 justify-center mt-4;
+
+    > div {
+      @apply text-white font-bold;
+
+      > span {
+        @apply ml-1 text-gray-200 font-medium;
+      }
+    }
+  }
+}

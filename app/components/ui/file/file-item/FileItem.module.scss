@@ -1,0 +1,65 @@
+.wrapper {
+  @apply bg-dark-ocean h-56 rounded-lg p-2 m-2 text-white;
+
+  &.wrapper_small {
+    @apply h-40
+  }
+
+  > .btn {
+    @apply relative;
+
+    > .wrapper_btn {
+      @apply flex justify-between items-center;
+
+      > .toggle {
+        @apply text-tiny text-white relative z-20 bg-ocean rounded-sm p-1.5 transition-all;
+
+        &.active {
+          @apply text-black bg-white
+        }
+      }
+
+      > a {
+        @apply text-tiny text-white bg-ocean rounded-sm p-1.5 transition-all;
+
+        &:hover {
+          @apply bg-ocean/20 scale-110;
+        }
+      }
+    }
+
+    > .menuBtn {
+      @apply absolute hidden h-40 top-0 left-0 z-10 bg-ocean rounded-lg animate-fade duration-500;
+
+      &.open {
+        @apply flex flex-col justify-center;
+      }
+    }
+  }
+
+  > .info {
+    @apply mt-5;
+
+    > .image {
+      @apply flex justify-center items-center mb-2;
+    }
+
+    > .file {
+      @apply flex justify-center items-center mb-2;
+
+      > .fileIcon {
+        @apply text-7xl;
+        width: 100px;
+        height: 100px;
+
+        > svg {
+          @apply mx-auto;
+        }
+      }
+    }
+
+    > .originalName {
+      @apply truncate text-center;
+    }
+  }
+}

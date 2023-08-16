@@ -1,0 +1,61 @@
+@import 'app/styles/mixins';
+
+.sidebar {
+  @apply fixed top-0 z-40 h-full py-5 px-7 overflow-y-scroll transition-all duration-500;
+  background-color: #121c32;
+  left: -100%;
+  border-right: 1px solid #ffffff;
+  width: 18%;
+
+  @include media('max', '2xl') {
+    width: 22%;
+  }
+
+  @include media('max', 'xl') {
+    width: 30%;
+  }
+
+  @include media('max', 'md') {
+    width: 40%;
+  }
+
+  @include media('max', 'sm') {
+    width: 60%;
+  }
+
+  &.open {
+    left: 0;
+  }
+
+  > .wrapper_logo {
+    @apply flex items-center justify-between;
+
+    > .logo {
+      @apply text-2xl font-semibold;
+      color: #fefefe;
+    }
+  }
+
+  > .wrapper_logout {
+    @apply flex items-center font-medium text-gray-300 my-7;
+
+    > span {
+      @apply mr-4 p-2 rounded-xl transition-all duration-500;
+      background-color: #363440;
+    }
+
+    > button {
+      @apply font-normal;
+    }
+
+    &:hover {
+      > span {
+        @apply bg-primary;
+      }
+    }
+  }
+
+  .copy {
+    @apply text-gray-300 text-xs;
+  }
+}

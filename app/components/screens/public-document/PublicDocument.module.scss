@@ -1,0 +1,13 @@
+.wrapper {
+  @apply flex flex-col justify-center items-center;
+  height: 85vh;
+  width: 100vw;
+
+  > .action {
+    @apply bg-dark-ocean rounded-b-lg flex flex-col items-center justify-center p-5;
+  }
+
+  > .btn {
+    @apply flex items-center justify-center gap-2 mt-10;
+  }
+}

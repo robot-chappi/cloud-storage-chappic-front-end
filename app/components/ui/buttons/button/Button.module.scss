@@ -1,0 +1,48 @@
+.button {
+  @apply py-1.5 flex items-center gap-3 rounded-lg px-7 bg-primary text-white bg-opacity-80 transition-colors duration-300 hover:bg-opacity-100 text-base;
+
+  &:disabled {
+    @apply opacity-70;
+  }
+
+  &.white {
+    @apply text-black;
+    background-color: #ffffff !important;
+  }
+
+  &.black {
+    @apply text-white;
+    background-color: #000000 !important;
+  }
+
+  &.grey {
+    @apply text-white;
+    background-color: #353340 !important;
+  }
+
+  &.primary {
+    @apply text-white;
+    background-color: #9334EA !important;
+  }
+
+  &.purple {
+    @apply text-white;
+    background-color: #6C5ECF !important;
+  }
+
+  &.transparent {
+    background-color: transparent !important;
+  }
+
+  &.icon {
+    @apply text-3xl p-2 m-1;
+  }
+
+  &.pagination {
+    @apply px-2
+  }
+
+  &.small {
+    @apply text-xs px-3 py-1
+  }
+}

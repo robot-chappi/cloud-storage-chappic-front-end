@@ -1,0 +1,6 @@
+export const accentColor = '#9334EA'
+export const bgColor = '#0f172a'
+
+export const IS_SERVER = typeof window === 'undefined'
+export const IS_CLIENT = typeof window !== 'undefined'
+export const IS_PRODUCTION = process.env.APP_ENV === 'production'

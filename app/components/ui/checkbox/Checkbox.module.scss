@@ -1,0 +1,11 @@
+.checkbox {
+  @apply flex items-center;
+
+  > span {
+    @apply text-xl p-2 rounded border border-solid border-gray-600 bg-transparent transition-colors duration-300 ease-in-out;
+
+    &.active {
+      @apply border-primary bg-primary;
+    }
+  }
+}

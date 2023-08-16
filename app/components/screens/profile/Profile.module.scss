@@ -1,0 +1,19 @@
+.wrapper {
+  @apply text-tiny text-white flex justify-center;
+
+  > .info {
+    @apply w-2/3;
+
+    > .avatar {
+      @apply flex items-center gap-10 flex-wrap justify-center;
+    }
+
+    > div {
+      @apply bg-dark-ocean rounded-lg p-3 my-4;
+
+      > span {
+        @apply font-bold
+      }
+    }
+  }
+}
